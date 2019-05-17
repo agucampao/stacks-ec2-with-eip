@@ -1,9 +1,9 @@
 module "webserver" {
-  source = "github.com/videocursoscloud/terraform-module-ec2-with-eip?ref=v1.0.2"
-  ami = "ami-00035f41c82244dab"
+  source = "github.com/agucampao/terraform-module-ec2-with-eip.git"
+  ami = "ami-0c6b1d09930fac512"
   instance_type = "t2.micro"
-  key_name = "microserver"
-  vpc_id = "vpc-0913547388f57caa4"
+  key_name = "mykey"
+  vpc_id = "vpc-9171a2eb"
   project_name = "webserver"
   environment = "produccion"
 }
