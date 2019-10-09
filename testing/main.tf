@@ -6,5 +6,6 @@ module "webserver" {
   vpc_id = "vpc-9171a2eb"
   project_name = "webserver"
   environment = "testing"
+  subnet_id = "subnet-d7aa228f"
 }
 
